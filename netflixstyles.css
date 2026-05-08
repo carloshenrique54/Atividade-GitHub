@@ -1,218 +1,117 @@
 :root {
-	--primary-color: #e5098d;
-}
- 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	--primary-color: #e50914;
 }
 
-body {
-	font-family: 'Arial' , sans-serif;
-	--webkit-font-smoothing: antialiased;
-	background: #000;
-	color: #999;
-	text-align: center;
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
 }
 
-ul {
-	list-style: none;
+body{
+	font-family:Arial, sans-serif;
+	background:#000;
+	color:#fff;
+	text-align:center;
 }
 
-h1{
-	font-size: 4rem;
+.showcase{
+	width:100%;
+	height:100vh;
+	background:url('https://raw.githubusercontent.com/Tsiangana/AOFlix/master/img/capa3.png') no-repeat center center/cover;
+	border-bottom:8px solid #222;
 }
 
-h1, h2, h3, h4 {
-	color: #000000;
-	text-shadow: 0px 0px 20px white;
+.showcase-top{
+	position:absolute;
+	margin:20px;
+	background:var(--primary-color);
+	padding:15px;
+	border-radius:10px;
+	font-weight:bold;
 }
 
-a{
-	color: #fff;
-	text-decoration: none;
+nav{
+	float:right;
+	padding:30px;
 }
 
-p {
-	margin: 0.5rem 0;
+.btn{
+	display:inline-block;
+	background:var(--primary-color);
+	padding:10px 20px;
+	border-radius:5px;
+	color:white;
+	text-decoration:none;
+	transition:0.3s;
 }
 
-img {
-	width: 100%;
+.btn:hover{
+	opacity:0.8;
 }
 
-.showcase {
-	width: 100%;
-	height: 93vh;
-	position: left;
-	background: url('https://raw.githubusercontent.com/Tsiangana/AOFlix/master/img/capa3.png') no-repeat center center/cover;
-	border-bottom: 8px solid #222;
-	text-indent: 5px;
+.showcase-content{
+	padding-top:250px;
 }
 
-.showcase-top {
-	position: absolute;
-	height: 130px;
-	width: 90px;
-	margin-left: 170px;
-	background-color: var(--primary-color);
-	color: #fff;
-	padding: 15px;
-	padding-top: 24px;
-	font-size: 14px;
-	font-weight: 600;
-	font-family: sans-serif;
-	cursor: pointer;
+.showcase-content h1{
+	font-size:4rem;
+	margin-bottom:30px;
 }
 
-.showcase-top img {
-	width: 170px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);
-	border-bottom: 8px solid #222;
+.search-box{
+	margin-top:20px;
 }
 
-nav {
-	float: right;
-	padding-top: 30px;
-	padding-right: 50px;
+input{
+	width:300px;
+	height:45px;
+	padding:10px;
+	border:none;
+	border-radius:5px;
 }
 
-/* Button */
-.btn {
-	display: inline-block;
-	background: var(--primary-color);
-	text-align: center;
-	border : none;
-	cursor: pointer;
-	
-	margin-right: 0.5rem;
-	outline: none;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.45);
-	border-radius: 5px;
-	transition: background-color .4s;
-	padding: 0.5rem 1rem;
+.enjoy-tv,
+.Watch-offline{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	padding:80px;
+	border-bottom:8px solid #222;
 }
 
-.btn:hover {
-	opacity: 0.7;
+.enjoy-tv img,
+.Watch-offline img{
+	width:400px;
+	border-radius:10px;
 }
 
-.btn-rounded {
-	border-radius: 5px;
+.Watch-offline{
+	background:var(--primary-color);
 }
 
-.btn-x1 {
-	font-size: 1rem;
-	padding: 0.8rem 1.3rem;
-	text-transform: uppercase; 
+.page-down{
+	background:var(--primary-color);
+	padding:30px;
+	font-size:20px;
 }
 
-.search-box {
-	position: center;
-	transform: translate(-50,-50);
-	height: 60px;
+.theme-buttons{
+	margin-top:30px;
+	display:flex;
+	justify-content:center;
+	gap:10px;
 }
 
-input {
-	height: 49px;
-	width: 550px;
-	border-radius: 5px;
-	padding: 0px 10px;
+.theme-buttons button{
+	padding:10px 20px;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;
+	font-weight:bold;
+	transition:0.3s;
 }
 
-.enjoy-tv {
-	font-size: 30px;
-	text-align: left;
-	position: relative;
-	padding: 150px 10%;
-	padding-left: 280px;
-	margin-bottom: 0;
-	background: 0 0;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	border-bottom: 8px solid #222; 
-}
-
-.enjoy-tv img {
-	width: 450px;
-}
-
-.Watch-offline {
-	font-size: 30px;
-	text-align: left;
-	position: relative;
-	padding: 150px 10%;
-	margin-bottom: 0;
-	padding-left: 230px;
-	background: var(--primary-color);
-	color: #fff;
-	display: flex;
-	align-items: center;
-	border-bottom: 8px solid #222;
-}
-
-.Watch-offline img {
-	width: 450px;
-	margin-left: 20px;
-}
-
-.watch-everywhere {
-	font-size: 30px;
-	text-align: left;
-	position: relative;
-	padding: 150px 10%;
-	padding-left: 280px;
-	margin-bottom: 0;
-	color: #fff;
-	display: block;
-	border-bottom: 8px solid #ff0000;	
-	background: url('https://www.showmetech.com.br/wp-content/uploads//2023/04/imagem_2023-04-05_171218497.png.webp') no-repeat center center/cover;
-}
-
-.watch-everywhere img {
-	width: 450px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(+20%, -50%);
-	display: block;
-}
-
-.ask-question {
-	padding-top: 60px;
-	padding-bottom: 50px;
-}
-
-.ask-question h1 {
-	font-size: 50px;
-	padding-bottom: 50px;
-}
-
-.ask-question button {
-	display: center;
-	text-align: left;
-	background-color: #303030;
-	color: white;
-	height: 65px;
-	width: 700px;
-	font-size: 0.9rem;
-	padding: 0.3rem 0.5rem;
-	text-transform: uppercase;
-	border-radius: 2px;
-}
-
-.page-down {
-	border-top: 8px solid #222;
-	background-color: var(--primary-color);
-	font-size: 0.8rem;
-	margin-bottom: 1.5rem;
-	padding: 25px;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 0.5rem;
+.theme-buttons button:hover{
+	transform:scale(1.1);
 }
