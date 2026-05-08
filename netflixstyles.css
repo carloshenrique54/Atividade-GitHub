@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #e50914;
+	--primary-color: #e5098d;
 }
  
 * {
@@ -25,7 +25,8 @@ h1{
 }
 
 h1, h2, h3, h4 {
-	color: #fff;
+	color: #000000;
+	text-shadow: 0px 0px 20px white;
 }
 
 a{
